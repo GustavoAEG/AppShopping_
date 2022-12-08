@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AppShopping_.ViewModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,8 @@ namespace AppShopping_.Views
         public PratosPrincipais()
         {
             InitializeComponent();
+
+            BindingContext = new PratosPrincipaisViewModel();
         }
     }
 }

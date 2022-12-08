@@ -25,7 +25,7 @@
         </DataTemplate>
     </Shell.FlyoutHeaderTemplate>
     <FlyoutItem Title="Principais" FlyoutDisplayOptions="AsMultipleItems" >
-        <ShellContent Title="Pratos Principais" IsVisible="true"
+        <ShellContent Title="Promoções" IsVisible="true"
                       Icon="MenuIconRestaurant" FlyoutItemIsVisible="True"
                       ContentTemplate="{DataTemplate views:PratosPrincipais}" />
         <ShellContent Title="Pratos Principais" IsVisible="true" 

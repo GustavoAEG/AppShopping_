@@ -2,10 +2,42 @@
     
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AppShopping_.Views.PratosPrincipais" >
+             x:Class="AppShopping_.Views.PratosPrincipais" 
+             xmlns:viewModel="clr-namespace:AppShopping_.ViewModel"
+             >
 
-    <StackLayout>
-       
-    </StackLayout>
+    <ContentPage.BindingContext>
+        <viewModel:PratosPrincipaisViewModel/>
+    </ContentPage.BindingContext>
+
+    <ContentPage.Content>
+        <StackLayout>
+            <Entry Text="{Binding SearchWord}" Placeholder="Pesquisar" Margin="10" HeightRequest="50" FontSize="Title"/>
+            <Button Text="Pesquisar" Command="{Binding SearchCommand}" BackgroundColor="Bisque" TextColor="OrangeRed"></Button>
+
+            <CollectionView ItemsSource="{Binding Availabilities}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <ContentView>
+                            <Frame>
+                                <Grid ColumnDefinitions="1*,1,2*">
+                                    <Image Source="{Binding Apresentacao}"/>
+                                    <BoxView Grid.Column="1" BackgroundColor="Black"/>
+                                    <StackLayout Grid.Column="2">
+                                        <Label Text="{Binding Name}"/>
+                                        <Label Text="{Binding Description}" MaxLines="3"/>
+                                        <Label Text="{Binding Price}" MaxLines="3"/>
+                                    </StackLayout>
+                                </Grid>
+                            </Frame>
+                        </ContentView>
+                    </DataTemplate>
+                    
+                </CollectionView.ItemTemplate>
+                
+            </CollectionView>
+        </StackLayout>
+    </ContentPage.Content>  
+  
 
 </ContentPage>
