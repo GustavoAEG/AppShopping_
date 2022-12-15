@@ -6,7 +6,7 @@
              xmlns:viewModel="clr-namespace:AppShopping_.ViewModel">
     <Shell.TitleView>
         <ContentView>
-            <Image Source="Japao" HorizontalOptions="End" VerticalOptions="Center" HeightRequest="90"></Image>
+            <Image Source="Japao" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="90"></Image>
         </ContentView>
       
     </Shell.TitleView>
