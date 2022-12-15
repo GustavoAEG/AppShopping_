@@ -5,7 +5,13 @@
              x:Class="AppShopping_.Views.PratosPrincipais" 
              xmlns:viewModel="clr-namespace:AppShopping_.ViewModel"
              >
-
+    <Shell.TitleView>
+        <ContentView>
+            <Image Source="Japao" HorizontalOptions="End" VerticalOptions="Center" HeightRequest="90"></Image>
+        </ContentView>
+      
+    </Shell.TitleView>
+    
     <ContentPage.BindingContext>
         <viewModel:PratosPrincipaisViewModel/>
     </ContentPage.BindingContext>
