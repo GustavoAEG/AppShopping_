@@ -33,6 +33,7 @@
             <Style TargetType="ContentPage" ApplyToDerivedTypes="True">
                 <Setter Property="BackgroundColor" Value="{StaticResource LightGray}" />
             </Style>
+           
 
             <Style TargetType="Frame">
                 <Setter Property="CornerRadius" Value="0" />
@@ -40,13 +41,14 @@
                 <Setter Property="Padding" Value="1" />
                 <Setter Property="HasShadow" Value="False" />
             </Style>
+            
 
             <Style TargetType="Label">
                 <Setter Property="FontFamily" Value="MontserratRegular" />
             </Style>
             <Style TargetType="Entry">
-                <Setter Property="FontFamily" Value="MontserratRegular" />
-                <Setter Property="FontSize" Value="12" />
+                <Setter Property="FontFamily" Value="Arial" />
+                <Setter Property="FontSize" Value="90" />
                 <Setter Property="TextColor" Value="{StaticResource Black}" />
             </Style>
 
