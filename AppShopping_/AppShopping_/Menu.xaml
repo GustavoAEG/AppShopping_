@@ -44,6 +44,6 @@
                       ContentTemplate="{DataTemplate views:PratosPrincipais}"/>
     <ShellContent Title="Detalhes do Prato" IsVisible="true" 
                   Icon="Japao" FlyoutItemIsVisible="True"
-                      ContentTemplate="{DataTemplate views:PratosPrincipais}"/>
+                      ContentTemplate="{DataTemplate views:PratosPrincipaisDetail}"/>
 
 </Shell>

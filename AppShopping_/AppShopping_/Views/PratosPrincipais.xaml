@@ -8,7 +8,6 @@
         <ContentView>
             <Image Source="Japao" HorizontalOptions="End" VerticalOptions="Center" HeightRequest="90"></Image>
         </ContentView>
-      
     </Shell.TitleView>
     
     <ContentPage.BindingContext>

@@ -6,9 +6,9 @@ namespace AppShopping_.Services
 {
     class PratosService
     {
-        internal object getPratos()
-        {
-            throw new NotImplementedException();
-        }
+        //internal object getPratos()
+        //{
+        //    throw new NotImplementedException();
+        //}
     }
 }

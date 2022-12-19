@@ -7,11 +7,27 @@
     <ContentPage.BindingContext>
         <viewModel:PratosPrincipaisDetailViewModel></viewModel:PratosPrincipaisDetailViewModel>
     </ContentPage.BindingContext>
+    <Shell.TitleView>
+        <ContentView>
+            <Image Source="Japao" HorizontalOptions="End" VerticalOptions="Center" HeightRequest="0"></Image>
+        </ContentView>
+    </Shell.TitleView>
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label Text="Pratos Principais" />
+            <Label Text="{Binding PratosPrincipais.Name }"></Label>
+
+            <Frame>
+
+
+                <Grid>
+               
+                    
+                </Grid>
+                
+                
+            </Frame>
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

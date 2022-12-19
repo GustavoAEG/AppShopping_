@@ -14,6 +14,8 @@ namespace AppShopping_.ViewModel
     class PratosPrincipaisViewModel:BaseViewModel
     {
         public string SearchWord { get; set; }
+
+        public string Name { get; set; }
         public ICommand SearchCommand { get; set; }
         public List<Availability> _allAvailabilities;
 
