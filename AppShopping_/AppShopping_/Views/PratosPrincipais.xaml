@@ -23,7 +23,7 @@
                 <Button Text="Ir" Grid.Column="1" Command="{Binding SearchCommand}" BackgroundColor="Bisque" TextColor="OrangeRed"></Button>
 
             </Grid>
-            <CollectionView ItemsSource="{Binding Availabilities}">
+            <CollectionView ItemsSource="{Binding pratosPrincipais}">
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
                         <ContentView Padding="10" >

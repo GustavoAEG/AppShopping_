@@ -4,21 +4,24 @@
              x:Class="AppShopping_.Views.PratosPrincipaisDetail"
              xmlns:viewModel="clr-namespace:AppShopping_.ViewModel"             
              >
-    <ContentPage.BindingContext>
-        <viewModel:PratosPrincipaisDetailViewModel></viewModel:PratosPrincipaisDetailViewModel>
-    </ContentPage.BindingContext>
     <Shell.TitleView>
         <ContentView>
             <Image Source="Japao" HorizontalOptions="End" VerticalOptions="Center" HeightRequest="0"></Image>
         </ContentView>
     </Shell.TitleView>
+    
+    <ContentPage.BindingContext>
+        <viewModel:PratosPrincipaisDetailViewModel></viewModel:PratosPrincipaisDetailViewModel>
+    </ContentPage.BindingContext>
+   
     <ContentPage.Content>
         <StackLayout>
             <Label Text="Pratos Principais" />
-            <Label Text="{Binding PratosPrincipais.Name }"></Label>
-
+            <Label Text="{Binding PratosPrincipais.Name}" TextColor="Black"></Label>
+            <Label Text="{Binding Name}"/>
+            <Label Text="{Binding Description}" MaxLines="2"/>
+          
             <Frame>
-
 
                 <Grid>
                

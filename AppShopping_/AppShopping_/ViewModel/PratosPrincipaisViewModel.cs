@@ -17,9 +17,9 @@ namespace AppShopping_.ViewModel
 
         public string Name { get; set; }
         public ICommand SearchCommand { get; set; }
-        public List<Availability> _allAvailabilities;
+        public List<PratosPrincipais> _allAvailabilities;
 
-        public List<Availability> Availabilities
+        public List<PratosPrincipais> pratosPrincipais
         {
             get
             {
@@ -37,15 +37,15 @@ namespace AppShopping_.ViewModel
         {
             SearchCommand = new Command(Search);
 
-            var allAvailabilities = new AvailabilityService().GetAvailabilities();
+            var allAvailabilities = new PratosPrincipaisService().GetAvailabilities();
             var allPratosPrincipais = allAvailabilities.Where(a => a.Type == OrderAvailability.PratosPrincipais).ToList();
-            Availabilities = allPratosPrincipais;
+            pratosPrincipais = allPratosPrincipais;
             _allAvailabilities = allPratosPrincipais;
         }
 
         private void Search()
         {
-            Availabilities = _allAvailabilities.Where(a => a.Name.ToLower().Contains(SearchWord.ToLower())).ToList();
+            pratosPrincipais = _allAvailabilities.Where(a => a.Name.ToLower().Contains(SearchWord.ToLower())).ToList();
         }
     }
 }

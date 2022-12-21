@@ -9,7 +9,6 @@ namespace AppShopping_.ViewModel
     class PratosPrincipaisDetailViewModel:BaseViewModel
     {
             
-        public Pratos Pratos { get; set; }
 
         public PratosPrincipaisDetailViewModel() //ctor vai definir valor p estabelecimento
         {

@@ -5,17 +5,13 @@ using AppShopping_.Model;
 using AppShopping_.Libraries.Enums;
 namespace AppShopping_.Services
 {
-    public class AvailabilityService
+    public class PratosPrincipaisService
     {
-        public List
-        <Availability>
-        GetAvailabilities()
+        public List<PratosPrincipais> GetAvailabilities()
         {
-            var availabilities = new List
-            <Availability>
-            ()
+            var pratosPrincipais = new List<PratosPrincipais>()
 {
-            new Availability()
+            new PratosPrincipais()
             {
             Id=1,
             Type= OrderAvailability.PratosPrincipais,
@@ -25,9 +21,9 @@ namespace AppShopping_.Services
             Vegan=false,
             Price=29.90,
             },
-             new Availability()
+             new PratosPrincipais()
             {
-            Id=1,
+            Id=2,
             Type= OrderAvailability.PratosPrincipais,
             Apresentacao="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Traditional_Sashimi_with_a_twist.jpg/220px-Traditional_Sashimi_with_a_twist.jpg",
             Name ="Sashimi",
@@ -35,9 +31,9 @@ namespace AppShopping_.Services
             Vegan=false,
             Price=29.90,
             },
-              new Availability()
+              new PratosPrincipais()
             {
-            Id=1,
+            Id=3,
             Type= OrderAvailability.PratosPrincipais,
             Apresentacao="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Sashimi_of_Chicken.jpg/220px-Sashimi_of_Chicken.jpg",
             Name ="Sashimi stzo",
@@ -46,7 +42,7 @@ namespace AppShopping_.Services
             Price=29.90,
             }
             };
-            return availabilities;
+            return pratosPrincipais;
         }
     }
 }
