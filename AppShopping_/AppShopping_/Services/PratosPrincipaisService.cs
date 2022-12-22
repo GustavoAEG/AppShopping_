@@ -16,7 +16,7 @@ namespace AppShopping_.Services
             {
             Id=1,
             Type= OrderAvailability.PratosPrincipais,
-            Apresentacao="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Sushi_platter.jpg/220px-Sushi_platter.jpg",
+            Apresentacao="https://soubh.uai.com.br/uploads/post/image/12596/main_IMG_2410.jpg",
             Name ="Sushi",
             Description="A forma tradicional do sushi é peixe fermentado e arroz, conservados com sal, em um processo originário do Sudeste Asiático, onde ainda continua popular nos dias de hoje.",
             Vegan=false,
