@@ -17,20 +17,17 @@
     <ContentPage.Content>
         <StackLayout>
             <Label Text="Pratos Principais" />
-            <Label Text="{Binding PratosPrincipais.Name}" TextColor="Black"></Label>
+            <Label Text="{Binding PratosPrincipais}" TextColor="Black"></Label>
             <Label Text="{Binding Name}"/>
-            <Label Text="{Binding Description}" MaxLines="2"/>
-          
+            <Label Text="{Binding PratosPrincipais.Description}" MaxLines="2" TextColor="Black"/>
             <Frame>
 
-                <Grid>
-               
-                    
-                </Grid>
-                
-                
-            </Frame>
+                <Grid ColumnDefinitions="1" RowDefinitions="Auto">
+                    <Image Source="{Binding PratosPrincipais.Apresentacao}" Grid.ColumnSpan="2"/>
 
+                </Grid>
+
+            </Frame>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

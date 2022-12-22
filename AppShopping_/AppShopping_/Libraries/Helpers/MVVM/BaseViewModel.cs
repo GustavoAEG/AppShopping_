@@ -5,7 +5,7 @@ using System.Text;
 
 namespace AppShopping_.Libraries.Helpers.MVVM
 {
-    class BaseViewModel:ObservableObject
+    public class BaseViewModel:ObservableObject
     {
     }
 }

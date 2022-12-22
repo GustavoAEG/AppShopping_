@@ -1,15 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using AppShopping_.ViewModel;
 using AppShopping_.Model;
 using AppShopping_.Libraries.Enums;
 namespace AppShopping_.Services
 {
     public class PratosPrincipaisService
     {
-        public List<PratosPrincipais> GetAvailabilities()
+        public List<PratosPrincipais> GetPratosPrincipais()
         {
-            var pratosPrincipais = new List<PratosPrincipais>()
+            var PratosPrincipais = new List<PratosPrincipais>()
 {
             new PratosPrincipais()
             {
@@ -42,7 +43,7 @@ namespace AppShopping_.Services
             Price=29.90,
             }
             };
-            return pratosPrincipais;
+            return PratosPrincipais;
         }
     }
 }

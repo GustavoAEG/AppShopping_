@@ -11,41 +11,39 @@ using Xamarin.Forms;
 
 namespace AppShopping_.ViewModel
 {
-    class PratosPrincipaisViewModel:BaseViewModel
+    public class PratosPrincipaisViewModel:BaseViewModel
     {
-        public string SearchWord { get; set; }
+            public string SearchWord { get; set; }
+            public ICommand SearchCommand { get; set; }
 
-        public string Name { get; set; }
-        public ICommand SearchCommand { get; set; }
-        public List<PratosPrincipais> _allAvailabilities;
+            public List<PratosPrincipais> _pratosPrincipais;
 
-        public List<PratosPrincipais> pratosPrincipais
-        {
-            get
-            {
-                return _allAvailabilities;
-            }
-            set
-            {
-                SetProperty(ref _allAvailabilities, value);
-            }
-           
-
+        public List<PratosPrincipais> PratosPrincipais {
+                get
+                {
+                    return _pratosPrincipais;
+                }
+                set
+                {
+                    SetProperty(ref _pratosPrincipais, value);
+                }
         }
+
+        private List<PratosPrincipais> _allPratosPrincipais;
 
         public PratosPrincipaisViewModel()
         {
             SearchCommand = new Command(Search);
 
-            var allAvailabilities = new PratosPrincipaisService().GetAvailabilities();
-            var allPratosPrincipais = allAvailabilities.Where(a => a.Type == OrderAvailability.PratosPrincipais).ToList();
-            pratosPrincipais = allPratosPrincipais;
-            _allAvailabilities = allPratosPrincipais;
+            var allPratosPrincipais = new PratosPrincipaisService().GetPratosPrincipais();
+            var allPratos = allPratosPrincipais.Where(a => a.Type == OrderAvailability.PratosPrincipais).ToList();
+            PratosPrincipais = allPratos;
+            _allPratosPrincipais = allPratos;
         }
 
         private void Search()
         {
-            pratosPrincipais = _allAvailabilities.Where(a => a.Name.ToLower().Contains(SearchWord.ToLower())).ToList();
+            PratosPrincipais = _allPratosPrincipais.Where(a => a.Name.ToLower().Contains(SearchWord.ToLower())).ToList();
         }
     }
 }
