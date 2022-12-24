@@ -7,6 +7,7 @@
             <Color x:Key="White">#FFFFFF</Color>
             <Color x:Key="Black">#000000</Color>
             <Color x:Key="LightGray">#F9F9F9</Color>
+            <Color x:Key="AlmostRedDark">#A52402</Color>
 
             <Color x:Key="TextPrimaryColor">#000000</Color>
             <Color x:Key="TextSecondColor">#A0A0A0</Color>
@@ -33,7 +34,6 @@
             <Style TargetType="ContentPage" ApplyToDerivedTypes="True">
                 <Setter Property="BackgroundColor" Value="{StaticResource LightGray}" />
             </Style>
-           
 
             <Style TargetType="Frame">
                 <Setter Property="CornerRadius" Value="0" />
@@ -46,6 +46,7 @@
             <Style TargetType="Label">
                 <Setter Property="FontFamily" Value="MontserratRegular" />
             </Style>
+            
             <Style TargetType="Entry">
                 <Setter Property="FontFamily" Value="Arial" />
                 <Setter Property="FontSize" Value="90" />
@@ -126,6 +127,31 @@
                 <Setter Property="HeightRequest" Value="50" />
                 <Setter Property="VerticalOptions" Value="Start" />
             </Style>
+
+            <Style TargetType="Label" x:Key="TipoPratos">
+                <Setter Property="FontFamily" Value="MontserratRegular" />
+                <Setter Property="FontSize" Value="24" />
+                <Setter Property="TextColor" Value="{StaticResource Black}" />
+            </Style>
+
+            <Style TargetType="Label" x:Key="NomePrato">
+                <Setter Property="FontFamily" Value="MontserratRegular" />
+                <Setter Property="FontSize" Value="36" />
+                <Setter Property="TextColor" Value="{StaticResource AlmostRedDark }" />
+            </Style>
+
+            <Style TargetType="Label" x:Key="DescricaoPrato">
+                <Setter Property="FontFamily" Value="MontserratRegular" />
+                <Setter Property="FontSize" Value="18" />
+                <Setter Property="TextColor" Value="{StaticResource Black }" />
+            </Style>
+            
+            <Style TargetType="Label" x:Key="PrecoPrato">
+                <Setter Property="FontFamily" Value="MontserratRegular" />
+                <Setter Property="FontSize" Value="36" />
+                <Setter Property="TextColor" Value="{StaticResource  Black }" />
+            </Style>
+
 
         </ResourceDictionary>
     </Application.Resources>
